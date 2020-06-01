@@ -1,1 +1,1 @@
-web: gunicorn slmdproject.wsgi --log-file-
+web: gunicorn slmdproject.wsgi --log-file -
