@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ {% block head %}
+  <head>
+  <title> SLMDSKILLS </title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{% static 'materialize/bin/materialize.min.css' %}"  media="screen,projection"/>
+    <link rel = "stylesheet"  
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">  
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="{% static 'materialize/bin/style.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ </head>
+{% endblock %}
+
+<body>
+{% block nav %}
+<nav class="color : blue darken-3">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><font face="Azonix"> SLMDSKILLS </font></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Course</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Login</a></li>
+  </ul>
+
+{% endblock %}
+
+{% block body_block %}
+{% endblock %}
+  
+     <!--Import jQuery before materialize.js-->
+    
+  {% block foot %}
+    <footer class="page-footer">
+          <div class="" style="padding-left: 25pt; line-height: 2">
+            <div class="row">
+              <div class="col m3 s12">
+                <h5 class="white-text">SLMDSKILLS</h5>
+                <p class="grey-text text-lighten-4">More than 10 year in education field</p>
+              </div>
+              <div class="col m3 s12">
+                <h5 class="white-text">Course</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Computer Course</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">University Course</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Training & Certification</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Desing & Developmen</a></li>
+                </ul>
+              </div>
+
+              <div class="col m3 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">course</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Login</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">contact</a></li>
+                </ul>
+              </div>
+
+              <div class="col m3 s12">
+                <h5 class="white-text">Contact Us</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Luniyawas Goner Road Jaipur</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">92140-86662</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">slmdskill@gmail.com</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">http://www.rgcsmluniyawas.in</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+    {% endblock %}
+
+    {% block footer %}    
+
+        <script type="text/javascript" src="{% static 'materialize/bin/jquery-3.2.1.min.js' %}"> </script>
+        <script type="text/javascript" src="{% static 'materialize/bin/materialize.min.js' %}"> </script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+<script> 
+$(document).ready(function() {  
+  $(".slider").slider({ 
+    full_width: true,
+    height: 580,
+    indicators: false,
+    duration: 2500,
+    interval: 5000
+       });  
+});  
+</script>
+    {% endblock %}
+  
+  </body>
+</html>

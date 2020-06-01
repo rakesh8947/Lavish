@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block body_block %}
+
+<div class="col s12">
+<img src="/media/images/contact2.jpg" class="cover" width="242" height="450" />
+ <div class="caption center-align light white-text text-lighten-3"">  
+    <h3 style="font-family: Azonix; margin-top: -250px;"> Contact Us </h3> 
+    <h5 class="light grey-text text-lighten-3">Contact for our Program</h5>  
+    </div> 
+   </div> 
+
+<div class="row" style="padding-top: 200px;">
+<div class="col m6 s12">
+<form class="col s12"  method='POST'>
+    {% csrf_token %}
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" class="validate" name="Name" required>
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input type="text" class="validate" name="Lname" required>
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" class="validate" name="Contact" required>
+          <label for="contact_no">Contact No</label>
+        </div>
+        <div class="input-field col s6">
+          <input type="text" class="validate" name="Email" required>
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea class="materialize-textarea" name="Message" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s6">
+         <button class="btn waves-effect waves-light" type="submit">Submit
+             <i class="material-icons right">send</i>
+          </button>
+        </div>
+        </div>
+      </form>
+      </div>
+      <div class="col m6 s12">
+      <img src="/media/images/contact3.jpg" style="size: 80%; width: 80%">
+      </div> </div> 
+
+{% endblock %}
+
+{% block footer %}
+{{ block.super }}
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+{% endblock %}

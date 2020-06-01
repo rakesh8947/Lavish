@@ -1,0 +1,353 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<body>
+  
+    <!--start slider -->
+    <div class="slider slider">  
+  <ul class="slides">  
+    <li>  
+      {% for office in object_list %}
+      {% if forloop.counter == 1 %}
+        <img src="{{ office.cover.url }}" alt="Image" width="100%" height="100%">
+       {% endif %} 
+       {% endfor %} 
+      <!-- random image -->  
+      <div class="caption left-align">  
+        <h2 style="font-family: Azonix"> SLMDSKILLS </h2>  
+        <h5 class="light-text text-lighten-3">Edication from School to College</h5> 
+
+  <div class="carousel-caption"> 
+      </div>
+      </div>  
+    </li>  
+   
+      
+<li>  
+   {% for office in object_list %}
+      {% if forloop.counter == 2 %}
+        <img src="{{ office.cover.url }}" alt="Image" width="100%" height="100%">
+       {% endif %} 
+       {% endfor %} 
+  <!-- random image -->  
+  <div class="caption right-align">  
+    <h2 style="font-family: Azonix"> TRAINING PROGRAM</h2> 
+    <h5 class="light-text text-lighten-3">Summer Training for College Students.</h5>  
+    </div>  
+</li>  
+
+<li>  
+   {% for office in object_list %}
+      {% if forloop.counter == 3 %}
+        <img src="{{ office.cover.url }}" alt="Image" width="100%" height="100%">
+       {% endif %} 
+       {% endfor %} 
+  <!-- random image -->  
+  <div class="caption left-align">  
+    <h2 style="font-family: Azonix"> DIGITAL LEARNING </h2>
+    <h5 class="light grey-text text-lighten-3">Learn through our Digital Plateform</h5>  
+    </div>  
+</li>
+
+<li>  
+   {% for office in object_list %}
+      {% if forloop.counter == 4 %}
+        <img src="{{ office.cover.url }}" alt="Image" width="100%" height="100%">
+       {% endif %} 
+       {% endfor %} 
+  <!-- random image -->  
+  <div class="caption center-align">  
+    <h2 style="font-family: Azonix"> CARRIER ORENTATION PROGRAM </h2> 
+    <h5 class="light grey-text text-lighten-3">Join our Carrier Prentation Program</h5>  
+    </div>  
+</li>
+</ul>  
+</div>  
+
+<!-- slider end -->
+
+<!-- box -->
+
+<div class="row">
+<div class="col m3 s12 deep-orange accent-3">
+    <p align="center" style="color: white"> 
+     <i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>    
+    <h5 class="white-text text-darken-2 center-align"> University Courses </h5> </p>
+        <p class="white-text text-darken-2 justify-align" style="font-size:13pt; padding: 10px;">
+            Over 3000+ satisfied student. We work since 2007 in education field. Over 3000+ satisfied student. We work since 2007 in education field.
+        </p>
+           </div>
+<div class="col m3 s12 indigo darken-4">
+    <p align="center" style="color: white">
+     <i class="fa fa-laptop-code fa-3x" aria-hidden="true"> </i> 
+       <h5 class="white-text text-darken-2 center-align"> Induatrial Training </h5> </p>
+        <p class="white-text text-darken-2 justify-align" style="font-size:13pt; padding: 10px;">
+            
+            Over 3000+ satisfied student. We work since 2007 in education field. Over 3000+ satisfied student. We work since 2007 in education field.
+
+        </p>
+           </div>  
+
+
+<div class="col m3 s12 deep-orange accent-3">
+    <p align="center" style="color: white"> 
+      <i class="fa fa-book-open fa-3x" aria-hidden="true"></i>  
+    <h5 class="white-text text-darken-2 center-align"> Library Facilities &nbsp; </h5> </p>
+        <p class="white-text text-darken-2 justify-align" style="font-size:13pt; padding: 10px;">            
+            Over 3000+ satisfied student. We work since 2007 in education field. Over 3000+ satisfied student. We work since 2007 in education field.
+        </p>
+           </div> 
+
+
+<div class="col m3 s12  indigo darken-4">
+    <p align="center" style="color: white"> 
+
+     <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i>  
+    <h5 class="white-text text-darken-2 center-align"> Staisfied Students </h5> </p>
+        <p class="white-text text-darken-2 justify-align" style="font-size:13pt; padding: 10px;">
+            
+            Over 3000+ satisfied student. We work since 2007 in education field. Over 3000+ satisfied student. We work since 2007 in education field.
+
+        </p>
+    </div>            
+</div>
+</div> 
+<!-- box end -->
+
+<!-- feature -->
+
+<div class="row hide-on-med-and-down" style="padding-left:30px;">
+  <div class="col s8">
+   <h5> Hear is size is 8 </h5>
+   <p> If we want 3 divs that are equal size, we define the divs with a width of 4-columns, as 4+4+4 nicely adds up to 12. Inside those divs. </p>
+<!-- column1 -->
+
+<div class="row">
+    <div class="col s2"> 
+        <p align="center">
+        <a class="btn-floating btn-large waves-effect waves-light red"> <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a>  </p>
+    </div>
+    
+    <div class="col s3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+    </div>        
+ <!-- column1 end -->
+
+<!-- column2-->
+
+    <div class="col s2"> 
+        <p align="center">
+        <a class="btn-floating btn-large waves-effect waves-light red"> <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+           </div>
+        </div>
+ <!-- column2 end -->
+<div class="row">
+    <div class="col s2"> 
+        <p align="center"> <a class="btn-floating btn-large waves-effect waves-light red"> <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a>  </p>
+    </div>
+    
+    <div class="col s3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+    </div>        
+ <!-- column1 end -->
+
+<!-- column2-->
+
+    <div class="col s2"> 
+        <p align="center"> <a class="btn-floating btn-large waves-effect waves-light red">
+         <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a>  </p>
+    </div>
+    
+    <div class="col s3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+           </div>
+        </div>
+ <!-- column2 end -->
+
+<div class="row">
+    <div class="col s2"> 
+        <p align="center"> 
+        <a class="btn-floating btn-large waves-effect waves-light red">
+        <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field.  </span> </p>
+    </div>        
+ <!-- column1 end -->
+
+<!-- column2-->
+
+<div class="col s2"> 
+  <p align="center">
+  <a class="btn-floating btn-large waves-effect waves-light red"> <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+           </div>
+        </div>
+
+<!-- row 2 -->  
+</div>
+  <div class="col s4" style="margin-top: -20px;"> 
+<img src="media/images/courseimg.jpg" style="width: 100%; height: 90%;"> </div>
+  </div> </div> 
+<!-- column3 -->
+<!-- feature end -->
+<div class="row hide-on-large-only">
+<div class="col s12 m12" style="padding: 20px;">
+<!-- line 1 -->
+<div class="row">
+    <div class="col s4 m3"> 
+        <p align="center"> 
+        <a class="btn-floating btn-large waves-effect waves-light red">
+        <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s7 m3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field.  </span> </p>
+    </div>        
+ <!-- column1 end -->
+<!-- column2-->
+
+    <div class="col s4 m2"> 
+        <p align="center"> 
+        <a class="btn-floating btn-large waves-effect waves-light red">
+        <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s7 m3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+           </div>
+        </div>
+
+<div class="row">
+    <div class="col s4 m3"> 
+        <p align="center"> 
+        <a class="btn-floating btn-large waves-effect waves-light red">
+        <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s7 m3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field.  </span> </p>
+    </div>        
+ <!-- column1 end -->
+<!-- column2-->
+
+    <div class="col s4 m2"> 
+        <p align="center"> 
+            <a class="btn-floating btn-large waves-effect waves-light red">
+            <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s7 m3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+           </div>
+        </div>
+
+<div class="row">
+    <div class="col s4 m3"> 
+        <p align="center"> 
+            <a class="btn-floating btn-large waves-effect waves-light red">
+        <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s7 m3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field.  </span> </p>
+    </div>        
+ <!-- column1 end -->
+<!-- column2-->
+
+    <div class="col s4 m2"> 
+        <p align="center"> 
+            <a class="btn-floating btn-large waves-effect waves-light red">
+        <i class="fa fa-user-graduate fa-3x" aria-hidden="true"></i> </a> </p>
+    </div>
+    
+    <div class="col s7 m3"> 
+        <p align="center"> <h5> Security First </h5> 
+          <span>
+             Over 3000+ satisfied student. We work since 2007 in education field. </span> </p>
+           </div>
+        </div>
+
+        </div> </div>
+
+<!-- line end 3 -->
+<!-- feature mobile -->
+<div class="card-panel">
+<div class="container">
+<center> <h3> Our Course </h3> </center>
+<p class="black-text text-lighten-3 center-align"> Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic  </p> 
+</div>
+<div class="row">
+<div class="col m3 s12" style="padding:10px;">
+<img src="media/images/soft4.jpg" style="width: 100%; size: 100%">
+<header><i class="fa fa-desktop" aria-hidden="true"></i> BCA Course 
+<i class="fa fa-calendar" aria-hidden="true" style="margin-left: 72px;"></i> Duration : 3 year
+</header>
+<p class="justify-align" style="font-size: 15pt;"> Computer Software Engineer </p>
+<p class="justify-align" style="font-size: 13pt;"> Join our graduate course "&nbsp;BCA (Bechalor of Computer Application)" and get sure job after 3 year course completation </p>
+ <button class="btn red waves-effect waves-light">Apply</a> </button>
+</div>
+
+<div class="col m3 s12" style="padding:10px;">
+<img src="media/images/soft1.jpg" style="width: 100%; size: 100%;">
+<header><i class="fa fa-desktop" aria-hidden="true"></i> B.Sc IT Course 
+<i class="fa fa-calendar" aria-hidden="true" style="margin-left: 57px;"></i> Duration : 3 year
+</header>
+<p class="justify-align" style="font-size: 15pt;"> Computer Software Engineer </p>
+<p class="justify-align" style="font-size: 13pt;"> Join our graduate course "B.Sc - IT (Bechalor of Science in Information Technology)" and get sure job after 3 year course completation </p>
+<button class="btn red waves-effect waves-light">Apply</a> </button>
+</div>
+
+<div class="col m3 s12" style="padding:10px;">
+<img src="media/images/soft2.jpg" style="width: 100%; size: 100%;">
+<header><i class="fa fa-desktop" aria-hidden="true"></i> Programmer
+<i class="fa fa-calendar" aria-hidden="true" style="margin-left: 67px;"></i> Duration : 1 year
+</header>
+<p class="justify-align" style="font-size: 15pt;"> Computer Progammer </p>
+<p class="justify-align" style="font-size: 13pt;"> Join our 1 year Diploma Course in Computer Prgrammer. Learn C, C++, Java, Python prgramming and many more </p>
+<button class="btn red waves-effect waves-light">Apply</button>
+</div>
+
+<div class="col m3 s12" style="padding:10px;">
+<img src="media/images/soft3.jpg" style="width: 100%; size: 100%;">
+<header><i class="fa fa-desktop" aria-hidden="true"></i> Web Designer 
+<i class="fa fa-calendar" aria-hidden="true" style="margin-left: 58px;"></i> Duration : 3 year
+</header>
+<p class="justify-align" style="font-size: 15pt;"> Wed Designer & Developer </p>
+<p class="justify-align" style="font-size: 13pt;"> Join our 1 year Diploma Course in Website desinging and development at various framework like Django, Bootstrap etc. </p>
+<button class="btn red waves-effect waves-light">Apply</a> </button>
+</div>
+ </div>  </div>
+ <!-- end Course -->
+ </body>
+{% endblock %}
+
