@@ -22,7 +22,7 @@ from office import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', views.base, name='base')
-    path('', include('office.urls')),
+    path('', include('office.urls'), name='index'),
     path('contact/', views.contact, name='contact'),
     path('thanks/', views.thanks, name='thanks'),
     path('register/', views.register, name='register'),
